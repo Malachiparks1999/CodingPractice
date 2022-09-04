@@ -10,3 +10,8 @@ DOB    : July 14, 1975
 Mobile : 99-9999999999
 */
 
+#include "./p1.h"
+
+int main(void){
+    printf("Hello\n");
+}
