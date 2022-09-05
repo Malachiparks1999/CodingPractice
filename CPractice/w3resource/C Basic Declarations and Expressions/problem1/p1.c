@@ -16,6 +16,7 @@ int main(void){
     char name[30], *number[11];
     int month, day, year;
     printName(name);
+    printDOB(month,day,year);
 }
 
 /*
@@ -46,7 +47,15 @@ void printName(char *username){
  *
  *   returns: none
  */
-void printDOB(int month, int day, int year);
+void printDOB(int month, int day, int year){
+    printf("ENTER YOUR DOB MONTH IN TWO DIGIT FORMAT: ");
+    scanf("%d", &month);
+    printf("ENTER YOUR DOB DAY TWO DIGIT FORMAT: ");
+    scanf("%d", &day);
+    printf("ENTER YOUR DOB YEAR FOUR DIGIT FORMAT: ");
+    scanf("%d", &year);
+    printf("%s %d %d %d\n", "DOB:", month, day, year);
+}
 
 /*
  * Function: printName
